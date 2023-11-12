@@ -103,21 +103,23 @@ function checker(arr) {
       }
     }
   } else if (emptyChecker(arr)) {
-    document.querySelector(
-      `.error${`${i == 0 ? "-day" : i == 1 ? "-mth" : "-yr"}`}`
-    ).textContent = "";
-    document.querySelector(
-      `${i == 0 ? "#dd" : i == 1 ? "#mm" : "#yy"}`
-    ).style.borderColor = "black";
-    document.querySelector(
-      `${i == 0 ? ".d" : i == 1 ? ".m" : ".y"}-red`
-    ).style.color = "black";
-
     ans = dateCalc(new Date(arr[2], arr[1], arr[0]));
     // tada
     document.querySelector(".year").textContent = ans[2];
     document.querySelector(".month").textContent = ans[1];
     document.querySelector(".day").textContent = ans[0];
+
+    for (let i = 0; i < 3; i++) {
+      document.querySelector(
+        `.error${`${i == 0 ? "-day" : i == 1 ? "-mth" : "-yr"}`}`
+      ).textContent = "";
+      document.querySelector(
+        `${i == 0 ? "#dd" : i == 1 ? "#mm" : "#yy"}`
+      ).style.borderColor = "black";
+      document.querySelector(
+        `${i == 0 ? ".d" : i == 1 ? ".m" : ".y"}-red`
+      ).style.color = "black";
+    }
   }
 }
 
