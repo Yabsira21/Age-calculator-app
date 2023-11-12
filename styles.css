@@ -13,8 +13,9 @@ body {
 }
 
 main {
+    transform: scale(1.1);
   background-color: white;
-  border-radius: 0.625rem 0.625rem 9.375rem 0.625rem;
+  border-radius: 1rem 1rem 9.375rem 1rem;
   display: flex;
   flex-direction: column;
   padding: 1.875rem;
