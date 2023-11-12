@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 94%);
+}
+
+main {
+  background-color: white;
+  border-radius: 0.625rem 0.625rem 9.375rem 0.625rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.875rem;
+  width: 43.75rem;
+}
+
+section:first-of-type {
+  display: flex;
+  /* border-bottom: 1px solid red; */
+}
+
+input {
+  font-size: 2rem;
+  padding: 0.625rem 0.938rem;
+  height: 3.75rem;
+  width: 8.125rem;
+  font-weight: 700;
+  font-family: inherit;
+  border-radius: 0.25rem;
+  border: hsl(0, 0%, 86%) 1px solid;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+label {
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.188rem;
+  color: hsl(0, 1%, 44%);
+  font-size: 0.75rem;
+}
+
+.circle {
+  background-color: hsl(259, 100%, 65%);
+  width: 5.625rem;
+  height: 5.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  align-self: flex-end;
+  z-index: 1;
+  position: relative;
+  top: -2.5rem;
+}
+
+hr {
+  position: relative;
+  top: -5rem;
+  left: 1.25rem;
+  width: 95%;
+  z-index: 0;
+  color: hsl(0, 0%, 86%);
+  border-color: hsl(0, 0%, 86%);
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  padding-left: 0.938rem;
+  /* padding-left: 30px; */
+}
+
+section:last-of-type {
+  padding-left: 1.875rem;
+  font-size: 3.5rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 5.625rem;
+  position: relative;
+  top: -2.5rem;
+}
+
+span {
+  color: hsl(259, 100%, 65%);
+}
+
+p {
+  font-weight: 400;
+  margin-top: 0.5rem;
+  font-style: italic;
+  font-size: small;
+  color: hsl(0, 100%, 67%);
+}
+
+.error {
+  color: hsl(0, 100%, 67%);
+}
+
+input:active {
+  border-color: hsl(259, 100%, 65%);
+  cursor: pointer;
+}
+
+.circle:active {
+  cursor: pointer;
+  background-color: black;
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 90%;
+  }
+  .circle {
+    align-self: center;
+  }
+
+  input {
+    padding: 0.5rem;
+  }
+
+  section:first-of-type {
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+  section:last-of-type {
+    font-size: 3rem;
+  }
+}

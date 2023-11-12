@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <!-- Day DD Month MM Year YYYY -->
+    <main>
+      <section>
+        <div class="desc">
+          <label for="dd" class="d-red">DAY</label>
+          <input type="number" name="dd" id="dd" placeholder="DD" />
+          <p class="error-day"></p>
+        </div>
+        <div class="desc">
+          <label for="mm" class="m-red">MONTH</label>
+          <input type="number" name="mm" id="mm" placeholder="MM" />
+          <p class="error-mth"></p>
+        </div>
+        <div class="desc">
+          <label for="yy" class="y-red">YEAR</label>
+          <input type="number" name="yy" id="yy" placeholder="YYYY" />
+          <p class="error-yr"></p>
+        </div>
+      </section>
+
+      <div class="circle">
+        <img src="assets/images/icon-arrow.svg" alt="" />
+      </div>
+      <hr />
+      <section>
+        <h1><span class="year">--</span> years</h1>
+        <h1><span class="month">--</span> months</h1>
+        <h1><span class="day">--</span> days</h1>
+      </section>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
